@@ -1,0 +1,36 @@
+<div class="col-md-12" style="padding:0.5em 0.75em 0;">
+  <header class="aa-title">Customize</header>
+  <div style="margin-bottom:1em;">
+    <button ng-click="vm.addPage()" type="button" class="btn btn-success">Add Page</button>
+    <button ng-click="vm.saveConsoleChanges()" type="button" class="btn btn-primary">Save and Apply</button>
+    <button ng-click="vm.cancelConsoleChanges()" type="button" class="btn btn-default">Cancel</button>
+  </div>
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th style="width:5em;">Page</th>
+      <th>Name</th>
+      <th style="width:10em;">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="page in vm.currentConsole.pages">
+      <td>
+        <img src="images/is_pane.gif" />
+      </td>
+      <td style="font-weight:bold;"><a href="" ng-click="vm.editPage(page)">{{page.id}}</a></td>
+      <td>
+        <button ng-click="vm.doPageAction('remove', $index)" type="button" class="btn btn-primary btn-xs" xxx-tooltip="remove">
+          <span class="glyphicon glyphicon-remove"></span>
+        </button>
+        <button ng-hide="$first" ng-click="vm.doPageAction('up', $index)" type="button" class="btn btn-primary btn-xs" xxx-tooltip="move up">
+          <span class="glyphicon glyphicon-chevron-up"></span>
+        </button>
+        <button ng-hide="$last" ng-click="vm.doPageAction('down', $index)" type="button" class="btn btn-primary btn-xs" xxx-tooltip="move down">
+          <span class="glyphicon glyphicon-chevron-down"></span>
+        </button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

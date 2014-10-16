@@ -1,0 +1,86 @@
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  margin-top: 0;
+}
+option {
+  padding: 0.2em;
+}
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.aa-body {
+  /* so that jetspeed/css/simple/default/default.css doesn't break our layout */
+  font-size: 14px;
+  padding-top: 51px;
+}
+.aa-side-nav {
+  position: fixed;
+  height: 100%;
+  width: 100px;
+  color: #fff;
+  background: none repeat scroll 0 0 #39444d;
+  z-index: 99999;
+}
+.aa-side-nav button {
+  width: 90%;
+  margin: 0.25em auto;
+  font-weight: bold;
+}
+.aa-tile {
+  cursor: pointer;
+  color: #000;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+}
+header.aa-title {
+  font-size: 2em;
+  color: #999;
+}
+/* Bootstrap mods */
+body.modal-open {
+  /* prevent modal from hiding the document scrollbar */
+  overflow: auto;
+}
+.alert-mock {
+  background-color: #fafafa;
+  border-color: #e3e3e3;
+}
+.modal-header.default {
+  /* same as btn-primary */
+  color: #fff;
+  background-color: #428bca;
+}
+.modal-header.error {
+  /* same as btn-danger */
+  color: #fff;
+  background-color: #d9534f;
+}
+/* angular-smart-table */
+.st-sort-ascent:before {
+  content: "▲";
+}
+.st-sort-descent:before {
+  content: "▼";
+}
+.st-selected,
+.table-striped > tbody > tr:nth-child(2n+1).st-selected > td,
+.table-striped > tbody > tr:nth-child(2n+1).st-selected > th {
+  color: white !important;
+  background: none repeat scroll 0 0 #216eff !important;
+}
+/* Dave's mods */
+.bold {
+  font-weight: bold;
+}
+.error {
+  color: #f00;
+  font-weight: bold;
+}

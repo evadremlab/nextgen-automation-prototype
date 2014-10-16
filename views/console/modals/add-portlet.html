@@ -1,0 +1,48 @@
+<div class="modal-header default">
+  <h3 class="modal-title">{{dlg.options.title}}</h3>
+</div>
+<div class="modal-body">
+  <form class="form-inline">
+    <table st-table="dlg.options.portlets" st-sort-default="title" class="table table-striped">
+      <thead>
+      <tr>
+        <td colspan="3">
+          <label for="filter">filter by:</label>
+          <select class="form-control" id="filter" ng-model="dlg.selectedfilter" ng-options="filter for filter in dlg.filters"></select>
+          <input st-search="dlg.selectedFilter" placeholder="filter value" class="input-sm form-control" type="search"/>
+        </td>
+      </tr>
+      <tr>
+        <th style="width:5em;">Add</th>
+        <th st-sort="title">Title</th>
+        <th st-sort="description">Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="portlet in dlg.options.portlets" ng-class="{'st-selected': portlet.isSelected}">
+        <td>
+          <input type="checkbox" ng-if="!portlet.assigned" ng-click="dlg.updateSelection($event, portlet)">
+          <span ng-if="portlet.assigned" class="glyphicon glyphicon-ok"></span>
+        </td>
+        <td>
+          {{portlet.localizedTitle()}}
+        </td>
+        <td>
+          {{portlet.description}}
+        </td>
+      </tr>
+      </tbody>
+      <tfoot>
+      <tr>
+        <td colspan="3" class="text-center">
+          <div st-pagination="" st-items-by-page="6" st-displayed-pages="20"></div>
+        </td>
+      </tr>
+      </tfoot>
+    </table>
+  </form>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-primary" ng-click="dlg.save()">Apply</button>
+  <button class="btn btn-default" ng-click="dlg.cancel()">Cancel</button>
+</div>

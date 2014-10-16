@@ -1,0 +1,52 @@
+{
+  "status": {
+    "code": "OK"
+  },
+  "content": {
+    "id": "82",
+    "pages": [
+      {
+        "id": "Administration",
+        "title": "some description for the Permits page here",
+        "description": "some description for the Permits page here",
+        "layout": "two-column",
+        "portlets": [
+          {
+            "marginheight": "0",
+            "width": "100%",
+            "entryName": "V360 My Navigation Portlet",
+            "marginwidth": "0",
+            "mediaType": "html",
+            "title": "My Navigation:en$$我的导航栏:zh$$التنقل الخاص بي:ar$$التنقل الخاص ب(My Navigation):de",
+            "category": "V360",
+            "frameborder": "0",
+            "height": "100",
+            "source": "/portlets/flowdiagram/flowDiagramShow.do",
+            "scrolling": "no",
+            "description": "V360 My Navigation Portlet",
+            "name": "mynavigation",
+            "display": "left",
+            "onload": ""
+          },
+          {
+            "marginheight": "0",
+            "width": "100%",
+            "entryName": "V360 Administration Portlet",
+            "marginwidth": "0",
+            "mediaType": "html",
+            "title": "Administration:en$$管理:zh$$الإدارة:ar$$الإدارة(Administration):de",
+            "category": "V360",
+            "frameborder": "0",
+            "height": "600",
+            "source": "/portlets/framework/includes/error/blank.jsp",
+            "scrolling": "no",
+            "description": "V360 Administration Portlet",
+            "name": "administration",
+            "display": "right",
+            "onload": ""
+          }
+        ]
+      }
+    ]
+  }
+}

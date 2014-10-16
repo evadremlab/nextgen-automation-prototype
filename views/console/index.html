@@ -1,0 +1,37 @@
+<div ui-view=""><!-- will be replaced with customize.html when clicking on the "Customize" button -->
+  <div class="col-md-12" style="padding:0.5em 0.75em 0;">
+    <header ng-if="!vm.initialized" class="aa-title">loading...</header>
+    <div ng-if="vm.initialized">
+      <header class="aa-title">{{vm.currentConsole.title}}</header>
+      <div style="margin-bottom:1em;">
+        <a href="" style="margin-right:1em;" ng-repeat="page in vm.currentConsole.pages" ng-class="{ bold: page.id === vm.activePage.id }" ng-click="vm.showPage(page)">{{page.id}}</a>
+      </div>
+      <div style="margin-bottom:1em;">
+        <button ui-sref="console.customize" type="button" class="btn btn-success">Customize</button>
+        <div class="btn-group" dropdown is-open="dropDownStatus.isOpen">
+          <button type="button" class="btn btn-primary dropdown-toggle" ng-disabled="disabled">
+            Select Console <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li ng-repeat="console in vm.availableConsoles">
+              <a href="" ng-click="vm.changeConsole(console)">{{console.title}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- ONE COLUMN LAYOUT -->
+      <div portlet-iframe="{{portlet}}" ng-if="vm.activePage.layout === 'one-column'" ng-repeat="portlet in vm.activePage.portlets"></div>
+      <!-- TWO COLUMN LAYOUT -->
+      <div class="row" ng-if="vm.activePage.layout === 'two-column'">
+        <!-- LEFT COLUMN -->
+        <div class="col-md-3" style="padding:0 1em;">
+          <div portlet-iframe="{{portlet}}" ng-repeat="portlet in vm.activePage.portlets | filter:vm.leftPortlet"></div>
+        </div>
+        <!-- RIGHT COLUMN -->
+        <div class="col-md-9" style="padding:0 1em;">
+          <div portlet-iframe="{{portlet}}" ng-repeat="portlet in vm.activePage.portlets | filter:vm.rightPortlet"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

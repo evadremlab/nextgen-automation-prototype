@@ -1,0 +1,16 @@
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <strong>{{portlet.localizedTitle()}}</strong>
+    <img ng-show="loading" src="images/spinner.gif" style="padding:0 0.5em;" class="ajax-spinner">
+  </div>
+  <div class="panel-body">
+    <iframe frameborder="0"
+            width="100%"
+            height="{{portlet.height}}"
+            scrolling="{{portlet.scrolling}}"
+            title="{{portlet.entryName}}"
+            ng-src="{{portlet.getUrl()}}">
+      {{portlet.entryName}} Content is not available
+    </iframe>
+  </div>
+</div>

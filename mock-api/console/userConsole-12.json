@@ -1,0 +1,102 @@
+{
+  "status": {
+    "code": "OK"
+  },
+  "content": {
+    "id": "12",
+    "pages": [
+      {
+        "id": "Home",
+        "title": "some description for the Home page here",
+        "description": "some description for the Home page here",
+        "layout": "one-column",
+        "portlets": [
+          {
+            "marginheight":"0",
+            "width":"100%",
+            "entryName":"V360 Bulletin Board Portlet",
+            "marginwidth":"0",
+            "mediaType":"html",
+            "title":"Bulletin Board:en$$公告栏:zh$$لوحة النشرات:ar$$لوحة النشرات(Bulletin Board):de",
+            "category":"V360",
+            "frameborder":"0",
+            "height":"200",
+            "source":"/portlets/message/messageListClient.do",
+            "scrolling":"no",
+            "description":"V360 Bullentin Board Portlet",
+            "name":"bulletinboard",
+            "display": "full",
+            "onload": ""
+          },
+          {
+            "marginheight":"0",
+            "width":"100%",
+            "entryName":"V360 General CAP Portlet",
+            "marginwidth":"0",
+            "mediaType":"html",
+            "title":"Record:en$$记录:zh$$Record:ar$$Record:de",
+            "category":"V360",
+            "frameborder":"0",
+            "height":"645",
+            "source":"/portlets/commons/cap/myCAPDetailPortlet.jsp?module=-select-",
+            "scrolling":"no",
+            "description":"V360 General Record Portlet",
+            "name":"generalcapportlet",
+            "display": "full",
+            "onload": ""
+          }
+        ]
+      },
+      {
+        "id": "Addresses",
+        "title": "some description for the Address page here",
+        "description": "some description for the Address page here",
+        "layout": "one-column",
+        "portlets": [
+          {
+            "marginheight":"0",
+            "width":"100%",
+            "entryName":"V360 Addresses Portlet",
+            "marginwidth":"0",
+            "mediaType":"html",
+            "title":"Addresses:en$$地址:zh$$العناوين:ar$$العناوين(Addresses):de",
+            "category":"V360",
+            "frameborder":"0",
+            "height":"630",
+            "source":"/portlets/commons/address/refAddress.jsp",
+            "scrolling":"no",
+            "description":"V360 Addresses Portlet",
+            "name":"addresses",
+            "display": "full",
+            "onload": ""
+          }
+        ]
+      },
+      {
+        "id": "Alerts",
+        "title": "some description for the Alerts page here",
+        "description": "some description for the Alerts page here",
+        "layout": "one-column",
+        "portlets": [
+          {
+            "marginheight":"0",
+            "width":"100%",
+            "entryName":"V360 Alerts Portlet",
+            "marginwidth":"0",
+            "mediaType":"html",
+            "title":"Alerts:en$$警告:zh$$التنبيهات:ar$$التنبيهات(Alerts):de",
+            "category":"V360",
+            "frameborder":"0",
+            "height":"50",
+            "source":"/portlets/alert/alertMessageList.do",
+            "scrolling":"auto",
+            "description":"V360 Alerts Portlet",
+            "name":"alerts",
+            "display": "full",
+            "onload": ""
+          }
+        ]
+      }
+    ]
+  }
+}

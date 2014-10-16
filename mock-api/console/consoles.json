@@ -1,0 +1,40 @@
+{
+  "status": {
+    "code": "OK"
+  },
+  "content": [
+    {
+      "console_desc": "Agency Administrator console",
+      "console_name": "Agency Administrator",
+      "console_nbr": 82,
+      "jetspeedPortlet": null,
+      "rec_date": "2013-04-17T00:00:00.000",
+      "rec_ful_name": "ADMIN",
+      "rec_status": "A",
+      "serv_prov_code": "BPTDEV",
+      "to_rec_date": null
+    },
+    {
+      "console_desc": "Default console",
+      "console_name": "Agency Default",
+      "console_nbr": 12,
+      "jetspeedPortlet": null,
+      "rec_date": "2011-12-05T00:00:00.000",
+      "rec_ful_name": "ADMIN",
+      "rec_status": "A",
+      "serv_prov_code": "BPTDEV",
+      "to_rec_date": null
+    },
+    {
+      "console_desc": "Standard console for Permits module",
+      "console_name": "Permits",
+      "console_nbr": 62,
+      "jetspeedPortlet": null,
+      "rec_date": "2013-03-12T00:00:00.000",
+      "rec_ful_name": "ADMIN",
+      "rec_status": "A",
+      "serv_prov_code": "BPTDEV",
+      "to_rec_date": null
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "status": {
+    "code": "OK"
+  },
+  "content": {
+    "id": "62",
+    "pages": [
+      {
+        "id": "Building Permits",
+        "title": "some description for the Building Permits page here",
+        "description": "some description for the Building Permits page here",
+        "layout": "one-column",
+        "portlets": [
+          {
+            "marginheight":"0",
+            "width":"100%",
+            "entryName":"V360 Building Permits Portlet",
+            "marginwidth":"0",
+            "mediaType":"html",
+            "title":"Building Permits:en$$建设许可证:zh$$تصاريح المبنى:ar$$تصاريح المبنى(Building Permits):de",
+            "category":"V360",
+            "frameborder":"0",
+            "height":"645",
+            "source":"/portlets/commons/cap/myCAPDetailPortlet.jsp?module=Building",
+            "scrolling":"no",
+            "description":"V360 Building Permits Portlet",
+            "name":"buildingpermits",
+            "display": "full",
+            "onload": ""
+          }
+        ]
+      },
+      {
+        "id": "Inspections",
+        "title": "some description for the Inspections page here",
+        "description": "some description for the Inspections page here",
+        "layout": "one-column",
+        "portlets": [
+          {
+            "marginheight":"0",
+            "width":"100%",
+            "entryName":"V360 Inspections Portlet",
+            "marginwidth":"0",
+            "mediaType":"html",
+            "title":"Inspections:en$$检查:zh$$عمليات الاستعلام:ar$$عمليات الاستعلام(Inspections):de",
+            "category":"V360",
+            "frameborder":"0",
+            "height":"650",
+            "source":"/portlets/inspection/inspectionListAndDetail.jsp",
+            "scrolling":"no",
+            "description":"V360 Inspections Portlet",
+            "name":"inspections",
+            "display": "full",
+            "onload": ""
+          }
+        ]
+      }
+    ]
+  }
+}
