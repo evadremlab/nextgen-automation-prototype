@@ -82,7 +82,7 @@
         title: 'Add Portlet',
         portlets: _.toArray(pagePortlets),
         selectedPage: vm.editedPage,
-        controller: 'AddPortletController'
+        controller: 'AddPortletController',
       }).result.then(addSelectedPortlets);
     }
 

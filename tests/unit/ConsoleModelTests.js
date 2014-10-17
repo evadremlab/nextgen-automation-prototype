@@ -1,20 +1,14 @@
 'use strict';
 
-/**
- * ConsoleModel unit tests.
- */
-
 describe('ConsoleModel:Tests', function() {
   var model;
 
   beforeEach(function() {
     module('nextgen');
 
-    inject(
-      function(_ConsoleModel_) {
-        model = _ConsoleModel_;
-      }
-    );
+    inject(function(ConsoleModel) {
+      model = ConsoleModel;
+    });
   });
 
   it('should define the model', function() {

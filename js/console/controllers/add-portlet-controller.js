@@ -22,15 +22,15 @@
 
     // PUBLIC methods
 
+    vm.cancel = function () {
+      $modalInstance.dismiss('cancel');
+    };
+
     vm.save = function() {
       var selectedPortlets = _.filter(vm.options.portlets, { isSelected: true });
       var selectedPortletKeys = _.pluck(selectedPortlets, 'entryName');
 
       $modalInstance.close(selectedPortletKeys);
-    };
-
-    vm.cancel = function () {
-      $modalInstance.dismiss('cancel');
     };
 
     vm.updateSelection = function($event, portlet) {

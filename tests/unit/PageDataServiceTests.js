@@ -1,11 +1,7 @@
 'use strict';
 
-/**
- * PageDataService unit tests.
- */
-
 describe('PageDataService:Tests', function() {
-  var $httpBackend, service, CONFIG;
+  var $httpBackend, service, config;
 
   var SERVICE_REQUEST = {
     AGENCY_PORTLETS: { mockPath: 'console/', endPoint: 'portlets' }
@@ -47,17 +43,15 @@ describe('PageDataService:Tests', function() {
   beforeEach(function() {
     module('nextgen');
 
-    inject(
-      function(_$httpBackend_, _PageDataService_, _CONFIG_) {
-        $httpBackend = _$httpBackend_;
-        service = _PageDataService_;
-        CONFIG = _CONFIG_;
+    inject(function(_$httpBackend_, PageDataService, CONFIG) {
+      $httpBackend = _$httpBackend_;
+      service = PageDataService;
+      config = CONFIG;
 
-        CONFIG.USE_MOCK_SERVICES = true;
-        CONFIG.LOG_CLIENT_ERRORS = false;
-        CONFIG.CONSOLE_LOGGING_ENABLED = false;
-      }
-    );
+      config.USE_MOCK_SERVICES = true;
+      config.LOG_CLIENT_ERRORS = false;
+      config.CONSOLE_LOGGING_ENABLED = false;
+    });
   });
 
   afterEach(function() {
@@ -67,6 +61,9 @@ describe('PageDataService:Tests', function() {
 
   it('should defined the service', function() {
     expect(service).toBeDefined();
+  });
+
+  it('should defined the service interface', function() {
     expect(service.get).toBeDefined();
     expect(service.post).toBeDefined();
     expect(service.getServiceUrl).toBeDefined();
@@ -89,7 +86,6 @@ describe('PageDataService:Tests', function() {
 
     service.get(serviceRequest).then(function(response) {
       console.log(JSON.stringify(response));
-
       data = response.data;
     });
 
@@ -98,5 +94,7 @@ describe('PageDataService:Tests', function() {
     expect(data).toBeDefined();
     expect(data.status).toBeDefined();
     expect(data.status.code).toEqual('OK');
+    expect(data.content.length).toBe(122);
+    expect(data.content[0].source).toBeDefined();
   });
 });

@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en" dir="ltr" id="ng-app" ng-app="nextgen" xmlns:ng="http://angularjs.org" ng-strict-di>
+<html lang="en" dir="ltr" id="ng-app" ng-app="nextgen" ng-strict-di="" xmlns:ng="http://angularjs.org">
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width,initial-scale=1" name="viewport">
   <meta content="IE=EmulateIE8" http-equiv="X-UA-Compatible">
 
+  <!-- remove for production -->
   <meta http-equiv="cache-control" content="max-age=0" />
   <meta http-equiv="cache-control" content="no-cache" />
   <meta http-equiv="expires" content="0" />
@@ -25,13 +26,7 @@
   <script type="text/javascript" src="js/vendor/modernizr.custom.js"></script>
 
   <!--[if lt IE 9]>
-  <script>
-    // add angular-ui elements to IE
-    var elems = 'accordion,accordion-group,accordion-heading,alert,carousel,pagination,progressbar,rating,tab,tabset'.split(',');
-    for (var i=0; i<elems.length; i++) {
-      document.createElement(elems[i]);
-    }
-  </script>
+  <script type="text/javascript" src="js/shared/angular-ui-ieshiv.js"></script>
   <script type="text/javascript" src="js/vendor/respond.min.js"></script>
   <![endif]-->
 </head>

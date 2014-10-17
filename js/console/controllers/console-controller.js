@@ -8,7 +8,7 @@
   /**
    * @ngInject
    */
-  function controller($log, $state, CONFIG, ConsoleManager, ModalDialog, _) {
+  function controller($log, $state, CONFIG, ConsoleManager, ModalDialog) {
 
     // PRIVATE data
 
@@ -56,7 +56,6 @@
 
       ConsoleManager.getAvailableConsoles().then(function(data) {
         vm.availableConsoles = data.availableConsoles;
-
         changeConsole(data.defaultConsole);
       }, notify);
     }

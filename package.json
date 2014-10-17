@@ -1,7 +1,7 @@
 {
-  "name": "nextgen-automation-console",
-  "version": "0.10.16",
-  "description": "nextgen-automation",
+  "name": "nextgen-automation-prototype",
+  "version": "0.10.17",
+  "description": "nextgen-automation-prototype",
   "main": "gruntfiles.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -4,7 +4,7 @@ For prototyping the javascript framework requirements for the nextgen console.
 
 Version
 ---
-0.10.16
+0.10.17
 
 Prerequisites
 ---

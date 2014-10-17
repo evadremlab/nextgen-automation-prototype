@@ -2,7 +2,7 @@
   'use strict';
 
   var config = {
-    'CURRENT_VERSION': '0.10.15',
+    'CURRENT_VERSION': '0.10.17',
     'PROJECT_NAME': 'NextGen Automation Prototype',
     'USE_MOCK_SERVICES': true,
     'USE_MOCK_PORTLETS': true,
