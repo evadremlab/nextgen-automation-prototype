@@ -6,13 +6,9 @@
     .factory('PageDataService', service);
 
   /**
-   * @ngInject
-   * @ngdoc overview
-   * @name PageDataService
-   * @requires $http
-   * @requires $log
-   * @requires CONFIG
    * @description Provides ajax wrapper.
+   *
+   * @ngInject
    */
   function service($http, $log, CONFIG) {
 

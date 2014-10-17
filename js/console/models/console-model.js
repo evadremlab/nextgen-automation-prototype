@@ -6,15 +6,11 @@
     .factory('ConsoleModel', service);
 
   /**
-   * @ngInject
-   * @ngdoc overview
-   * @name ConsoleModel
-   * @requires CONFIG
-   * @requires Underscore
-   *
    * @description
    * Provides data models for the Console controllers.
    * Entities are defined in /js/console/entities
+   *
+   * @ngInject
    */
   function service(CONFIG, _) {
 

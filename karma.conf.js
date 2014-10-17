@@ -1,17 +1,6 @@
 module.exports = function (config) {
   'use strict';
 
-//  function registerNamespace(namespacePath) {
-//    var rootObject = window;
-//    var namespaceParts = namespacePath.split('.');
-//    for (var i = 0; i < namespaceParts.length; i++) {
-//      var currentPart = namespaceParts[i];
-//      if (!rootObject[currentPart]) {
-//        rootObject[currentPart] = {};
-//      }
-//    }
-//  }
-
   config.set({
       // enable / disable watching file and executing tests whenever any file changes
       autoWatch: true,
@@ -21,9 +10,6 @@ module.exports = function (config) {
 
       // testing framework to use (jasmine/mocha/qunit/...)
       frameworks: ['jasmine'],
-
-      // list of files / patterns to load in the browser
-      //     "karma-jasmine": "^0.1.5",
 
       files: [
         'bower_components/angular/angular.js',

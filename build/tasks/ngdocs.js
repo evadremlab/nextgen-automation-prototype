@@ -8,6 +8,6 @@ module.exports = {
     bestMatch: true
   },
   all: {
-    src: ['./js/console/**/*.js']
+    src: ['./js/console/services/*.js']
   }
 };

@@ -1,10 +1,10 @@
-# nextgen-automation-console
+# nextgen-automation-prototype
 
 For prototyping the javascript framework requirements for the nextgen console.
 
 Version
 ---
-0.10.07
+0.10.16
 
 Prerequisites
 ---

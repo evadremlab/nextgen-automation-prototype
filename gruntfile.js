@@ -2,8 +2,6 @@
 
 module.exports = function (grunt) {
 
-  grunt.loadNpmTasks('grunt-ng-annotate');
-
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 

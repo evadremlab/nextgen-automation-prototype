@@ -1,6 +1,6 @@
 {
   "name": "nextgen-automation-console",
-  "version": "0.10.15",
+  "version": "0.10.16",
   "description": "nextgen-automation",
   "main": "gruntfiles.js",
   "scripts": {
